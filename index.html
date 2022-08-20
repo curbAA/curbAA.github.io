@@ -8,8 +8,17 @@
     </head>
     <body>
         <p>This is my website</p>
+        <button id="myButton">Alert</button>
         <script>
-            alert("welcome");
+            const myButton = document.querySelector("#myButton");
+
+            const myFunc = () => {
+                alert("Welcome");
+            };
+
+            myButton.addEventListener("click", () => {
+                myFunc();
+            });
         </script>
     </body>
 </html>
